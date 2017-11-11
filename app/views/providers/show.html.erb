@@ -2,17 +2,17 @@
   <div class="row">
     <div class="col-xs-12 col-sm-8">
 
-        <!-- Electrician profile -->
+        <!-- Consultant profile -->
         <div class="panel panel-default">
           <div class="panel-heading">
-          <h4 class="panel-title">Electrician Profile</h4>
+          <h4 class="panel-title">Consultant Profile</h4>
           </div>
           <div class="panel-body">
             <div class="profile__avatar">
               <%= image_tag @provider.avatar %>
             </div>
             <div class="profile__header">
-              <h4><%= "#{@provider.firstname} #{@provider.lastname}" %><small> Electrician</small></h4>
+              <h4><%= "#{@provider.firstname} #{@provider.lastname}" %><small> Consultant</small></h4>
               <p class="text-muted">
                 <%= @provider.description %>
               </p>
@@ -20,21 +20,17 @@
           </div>
         </div>
 
-        <!-- Electrician info -->
+        <!-- Consultant info -->
         <div class="panel panel-default">
           <div class="panel-heading">
-          <h4 class="panel-title">Electrician info</h4>
+          <h4 class="panel-title">Consultant info</h4>
           </div>
           <div class="panel-body">
             <table class="table profile__table">
               <tbody>
                 <tr>
-                  <th><strong>License Number</strong></th>
-                  <td><%= @provider.license_num %></td>
-                </tr>
-                <tr>
                   <th><strong>Position</strong></th>
-                  <td>Electrician</td>
+                  <td>Consultant</td>
                 </tr>
                 <tr>
                   <th><strong>Experience</strong></th>
