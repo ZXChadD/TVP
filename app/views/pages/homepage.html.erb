@@ -1,5 +1,4 @@
 <head>
-  <title>Cool Joe</title>
   <%= csrf_meta_tags %>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -18,26 +17,16 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">CoolJoe</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li>
                         <%= link_to "User Login", new_user_session_path, class: "page-scroll" %>
                     </li>
                     <li>
-                        <%= link_to "Provider Login", new_provider_session_path, class: "page-scroll" %>
+                        <%= link_to "Consultant Login", new_provider_session_path, class: "page-scroll" %>
                     </li>
                 </ul>
             </div>
@@ -48,108 +37,10 @@
         <div class="header-home">
           <div class="header-content">
             <div class="header-content-inner">
-              <h1 id="homeHeading">Your No.1 Source for Reliable Electricians!</h1>
+              <h1 id="homeHeading">Your No.1 Source for Consultants!</h1>
               <hr>
-              <p>CoolJoe can help you solve all your woes in electrical issues by providing the best pool of electricians at your fingertips</p>
-              <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
           </div>
         </div>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
-                    <hr class="light">
-                    <p class="text-faded">CoolJoe has everything you need to fix all kinds of electrical problems. From fused lights to wiring problems, our licensed electricians can solve all issues at hand.</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Check Out Our Services</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Licensed Electricans</h3>
-                        <p class="text-muted">All Electricians are licensed to ensure that you have the best</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>24/7 support</h3>
-                        <p class="text-muted">Our support team is 24/7, ready to serve you at any time!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>3 days warranty</h3>
-                        <p class="text-muted">Customers will have 3 days warranty after the issue is fixed. We will only release the payment to Electricians after the job is satisfactory!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Every Customer Counts</h3>
-                        <p class="text-muted">We monitor every single dealings in CoolJoe and ensure that customers get a smooth experience.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4 col-sm-offset-4 text-center">
-          <a href="#contact" class="btn btn-primary btn-xl page-scroll">Get Started Now!</a>
-        </div>
-      </div>
-    </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Ready to use CoolJoe?</h2>
-                    <hr class="primary">
-                    <p>Click on the option below to choose if you are either User or Provider</p>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-xs-5 col-xs-offset-1 text-center">
-                    <%= link_to "User", new_user_session_path, class:"btn btn-primary btn-xl page-scroll", id: "user-home-button" %>
-                </div>
-
-                <div class="col-xs-5 text-center">
-                    <%= link_to "Provider", new_provider_session_path, class:"btn btn-primary btn-xl page-scroll", id: "provider-home-button"%>
-                </div>
-              </div>
-            </br>
-              <div class="row">
-                <div class="col-xs-4 col-xs-offset-4 text-center col-sm-3 col-sm-offset-3" id:"contact-home">
-                  <i class="fa fa-phone fa-3x sr-contact"></i>
-                  <p>+65-9229-2455</p>
-                </div>
-                <div class="col-xs-4 col-xs-offset-4 text-center col-sm-3 col-sm-offset-0">
-                  <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                  <p><a href="mailto:admin@cooljoe.com">admin@cooljoe.com</a></p>
-                </div>
-              </div>
-
-      </div>
-    </section>
 </body>
