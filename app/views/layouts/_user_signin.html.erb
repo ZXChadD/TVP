@@ -1,22 +1,22 @@
 <div class="row">
-  <div class='col-sm-4 col-sm-offset-4 text-center'>
+  <!-- <div class='col-sm-4 col-sm-offset-4 text-center'>
     <%= link_to (image_tag "cooljoe.png", id: "logo"), users_path%>
-  </div>
+  </div> -->
 </div>
+
+<!-- Second navbar for profile settings -->
 <div class='row'>
-  <div id='banner_links', class='col-md-6 col-md-offset-3'>
-    <span><%= link_to 'Home', users_path %></span>
-    <span class='divider'>|</span>
-    <span><%= link_to 'Urgent job', urgent_path %></span>
-    <span class='divider'>|</span>
-    <span><%= link_to 'Request job', new_joblisting_path %></span>
-    <span class='divider'>|</span>
-    <span><%= link_to 'Electricians', electricians_path %></span>
-    <span class='divider'>|</span>
-    <span><%= link_to 'Profile', user_path(current_user) %></span>
-    <span class='divider'>|</span>
-    <span><%= link_to "Messages(#{current_user.messages.where(userticks: 'green').count})", conversations_path(current_user.id) %></span>
-    <span class='divider'>|</span>
-    <span><%= link_to 'Log out', destroy_user_session_path, method: :delete %></span>
-  </div>
+  <nav class="navbar navbar-inverse">
+
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="navbar-collapse-4">
+       <ul class="nav navbar-nav navbar-right">
+         <li><%= link_to 'Home', users_path %></li>
+         <li><%= link_to 'Consultants', electricians_path %></li>
+         <li><%= link_to 'Request job', new_joblisting_path %></li>
+         <li><%= link_to 'Profile', user_path(current_user) %></li>
+         <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
+       </ul>
+     </div><!-- /.navbar-collapse -->
+  </nav><!-- /.navbar -->
 </div>

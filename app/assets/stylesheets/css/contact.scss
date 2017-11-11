@@ -90,12 +90,14 @@
 		margin-left: 5%;
 	}
   .navbar-nav>li>a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px !important;
+    padding-bottom: 0px;
+    font-size: 15px;
   }
   .contact-page .col-sm-6 {
     padding-left: 30px;
     padding-right: 30px;
+    border: none !important;
   }
 }
 
