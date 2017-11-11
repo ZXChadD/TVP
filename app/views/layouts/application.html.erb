@@ -10,14 +10,14 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   </head>
+  <body class="Site">
     <%= render partial: 'layouts/header' %>
     <% if notice != nil %>
-      <p class="notice"><%= notice %></p>
+    <p class="notice"><%= notice %></p>
     <% end %>
     <% if alert !=nil %>
-      <p class="alert"><%= alert %></p>
+    <p class="alert"><%= alert %></p>
     <% end %>
-  <body class="Site">
     <main class="Site-content">
       <%= yield %>
     </main>
