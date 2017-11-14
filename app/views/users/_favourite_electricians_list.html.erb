@@ -1,10 +1,9 @@
-<h3>Favourite Electricians</h3>
+<h3>Favourite Consultants</h3>
 <div class="panel panel-default">
   <table class="table">
     <tr>
       <td>#</td>
-      <td>Electrician name</td>
-      <td>Experience</td>
+      <td>Consultant name</td>
       <td>Telephone number</td>
       <td>Email</td>
     </tr>
@@ -12,7 +11,6 @@
     <tr>
       <td><%= index + 1 %></td>
       <td><%= link_to "#{electrician.firstname.capitalize}", provider_path(electrician) %></td>
-      <td><%= electrician.experience %></td>
       <td><%= electrician.tel_num %></td>
       <td><%= electrician.email %></td>
     </tr>
