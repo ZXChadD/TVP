@@ -3,12 +3,12 @@
 }
 
 .btn-success {
-  background: #000;
+  background: #306ba8;
   border-radius:5px;
-  border: 2px solid #000;
+  border: 2px solid #306ba8;
   webkit-transition: all 400ms cubic-bezier(.4,0,.2,1);
   transition: all 400ms cubic-bezier(.4,0,.2,1);
-  background-color: #000;
+  background-color: #306ba8;
 }
 
 #sign-box {
@@ -17,14 +17,14 @@
 
 .btn-success:hover,.btn-success:focus {
   background: rgba(242, 97, 1, 0);
-  border: 2px solid #000;
+  border: 2px solid #306ba8;
   webkit-transition: all 400ms cubic-bezier(.4,0,.2,1);
   transition: all 400ms cubic-bezier(.4,0,.2,1);
-  color: #000;
+  color: #306ba8;
 }
 
 a {
-  color: #000;
+  color: #306ba8;
 }
 
 ul {
@@ -56,7 +56,7 @@ article[role="login"]:hover {
 article[role="login"] h3 {
   font-size: 26px;
   font-weight: 300;
-  color: #000;
+  color: #306ba8;
   margin-bottom: 20px;
 }
 

@@ -1,21 +1,6 @@
-<div class='row'>
-  <!-- <div id='com_name', class='col-sm-4 col-sm-offset-4 text-center' >
-    <%= link_to (image_tag "cooljoe.png", id: "logo"), users_path%>
-  </div> -->
-</div>
-
-  <!-- Second navbar for profile settings -->
-<div class='row'>
- <nav class="navbar navbar-inverse">
-
-     <!-- Collect the nav links, forms, and other content for toggling -->
-     <div class="collapse navbar-collapse" id="navbar-collapse-4">
-       <ul class="nav navbar-nav navbar-right">
-         <li><%= link_to 'Home', providers_path %></li>
-         <li><%= link_to 'All Jobs', joblistings_path %></li>
-         <li><%= link_to 'Profile', provider_path(current_provider) %></li>
-         <li><%= link_to 'Log out', destroy_provider_session_path, method: :delete %></li>
-       </ul>
-     </div><!-- /.navbar-collapse -->
- </nav><!-- /.navbar -->
-</div>
+<ul class="menu cf">
+  <li><%= link_to 'Home', providers_path %></li>
+  <li><%= link_to 'All Jobs', joblistings_path %></li>
+  <li><%= link_to 'Profile', provider_path(current_provider) %></li>
+  <li><%= link_to 'Log out', destroy_provider_session_path, method: :delete %></li>
+</ul>

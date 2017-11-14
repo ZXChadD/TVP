@@ -6,7 +6,7 @@
       <td>Date</td>
       <td>Summary</td>
       <td>Status</td>
-      <td>Electrican name</td>
+      <td>Consultant name</td>
       <!-- <td>Response</td> -->
     </tr>
     <% @current_joblistings.each_with_index do |current_joblisting, index| %>
@@ -27,4 +27,4 @@
     <% end %>
   </table>
 </div>
-<%= will_paginate @current_joblistings %>              
+<%= will_paginate @current_joblistings %>

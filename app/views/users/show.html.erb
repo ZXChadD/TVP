@@ -25,10 +25,16 @@
             <table class="table profile__table">
               <tbody>
                 <tr>
-                  <th><strong>Address</strong></th>
-                  <td><i class="fa fa-home" aria-hidden="true"><%= @user.user_address %></td>
+                  <th><strong>Email</strong></th>
+                  <td><%= @user.email %>
                   <th><strong>Telephone</strong></th>
-                  <td><i class="fa fa-phone" aria-hidden="true"></i><%= @user.tel_num %></td>
+                  <td><%= @user.tel_num %></td>
+                  <tr>
+                    <th><strong>Company</strong></th>
+                    <td><%= @user.company %></td>
+                    <th><strong>Industry</strong></th>
+                    <td></i><%= @user.industry %></td>
+                  </tr>
                 </tr>
               </tbody>
             </table>
@@ -36,7 +42,7 @@
         </div>
 
         <!-- Community -->
-        <div class="panel panel-default">
+        <!-- <div class="panel panel-default">
           <div class="panel-heading">
           <h4 class="panel-title">Activity</h4>
           </div>
@@ -58,7 +64,7 @@
               </tbody>
             </table>
           </div>
-        </div>
+        </div> -->
         <%= link_to 'Edit', edit_user_registration_path, class: "btn btn-success btn-block" %>
     </div>
   </div>
